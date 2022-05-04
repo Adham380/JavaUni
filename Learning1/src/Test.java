@@ -1,12 +1,13 @@
-public class Test {
-    public static void main(String[] args) {
+public abstract class Test {
+    private int versionID;
 
-        int x = 0, y = 1, z = 2;
-        String testStr = "Hello";
-
-        double a = 0.f;
-        x = (int) a;
-
-        System.out.println(testStr.toUpperCase().length());
+    public Test(int id){
+        this.versionID = id;
     }
+
+    public void setId(int Id){
+        this.versionID = Id;
+    }
+
+    public abstract float area();
 }
